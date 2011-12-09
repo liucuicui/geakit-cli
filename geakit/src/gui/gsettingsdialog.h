@@ -21,12 +21,18 @@ class GSettingsDialog :public QDialog
     explicit GSettingsDialog(QWidget* parent = 0);
     ~GSettingsDialog(){}
 
+    void accountSetUsername(QString username);
+    void accountSetPassword(QString password);
+    QString accountUsername();
+    QString accountPassword();
+
   signals:
     void loginResult(bool is_success, QString message);
 
   private:
     Ui::GSettingsDialog* ui;
     QNetworkAccessManager* m_manager;
+    bool m_toAuth;
 
   private slots:
     void onLoginButtonClicked();

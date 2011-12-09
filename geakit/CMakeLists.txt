@@ -17,18 +17,24 @@ set(GEAKIT_SRCS
 	src/main.cpp
 	src/gui/gmainwindow.cpp
 	src/gui/gsettingsdialog.cpp
+	src/gui/gaddrepositorydialog.cpp
 	src/api/gaccountapi.cpp
+	src/data/account.cpp
+	src/data/locproject.cpp
+	src/data/locpromanager.cpp
 	)
 
 set(GEAKIT_HEADERS
 	src/gui/gmainwindow.h
 	src/gui/gsettingsdialog.h
+	src/gui/gaddrepositorydialog.h
 	src/api/gaccountapi.h
 	)
 
 set(GEAKIT_UIS
 	uis/gmainwindow.ui
 	uis/gsettingsdialog.ui
+	uis/gaddrepositorydialog.ui
 	)
 
 set(GEAKIT_RCCS
